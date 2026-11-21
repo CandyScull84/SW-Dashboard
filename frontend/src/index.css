@@ -1,0 +1,69 @@
+/*index.css*/
+
+:root {
+  --font-base: clamp(0.85rem, 0.9vw, 1rem);
+  --font-small: clamp(0.75rem, 0.75vw, 0.9rem);
+  --font-large: clamp(1.1rem, 1.2vw, 1.4rem);
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: clamp(1rem, 1.5vw, 2rem);
+
+  --card-radius: 12px;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  --sidebar-width: clamp(140px, 12vw, 240px);
+  --header-height: clamp(64px, 7vh, 100px);
+  --header-logo-width: clamp(75px, 6vw, 100px);
+
+}
+/* === DARK MODE THEME ===*/
+:root.dark{
+  --color-bg: #002B45;
+  --color-card: #003c69;
+  --color-text: #fff;
+  --color-accent: #0089c4 ;
+  --color-subtle: #d1d4d3;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --card-shadow-1: 0 3px 6px rgba(255, 255, 255, 0.04);
+  --card-shadow-2: 0 8px 12px rgba(0, 0, 0, 0.4);
+
+  --fade-start: rgba(0, 0, 0, 0.0);
+  --fade-end: rgba(0, 0, 0, 0.35);
+}
+/* === LIGHT MODE THEME === */
+:root.light {
+  --color-bg: #f5f9fc;
+  --color-card: #ffffff;
+  --color-text: #002b45;
+  --color-accent: #0089c4 ;
+  --color-subtle:  #666466;
+  --color-border: rgba(0, 0, 0, 0.2);
+  --card-shadow-1: 0 3px 6px rgba(0, 0, 0, 0.08);
+  --card-shadow-2: 0 12px 20px rgba(0, 0, 0, 0.06);
+
+  --fade-start: rgba(255, 255, 255, 0.0);
+  --fade-end: rgba(0, 0, 0, 0.1);
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: underline;
+}

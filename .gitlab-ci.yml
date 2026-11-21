@@ -1,0 +1,16 @@
+
+default:
+  image: node:22
+
+stages:
+  - build
+
+build-frontend:
+  stage: build
+  script:
+    - cd frontend
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/dist

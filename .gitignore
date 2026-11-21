@@ -1,0 +1,51 @@
+# Tidigare Git-historik
+.git-old/
+
+# Miljövariabler och hemligheter
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.log
+
+# Frontend
+node_modules/
+dist/
+
+# Utvecklingsmiljö
+.vscode/
+.idea/
+
+# Operativsystem
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+.venv/
+venv/
+
+# Previous Git repository backup
+.git-old/
+
+# Internal project documentation
+beskrivning.md
+mom-LIA.md
+doc/backlog.md
+doc/current-projects.md
+doc/failing-pipelines.md
+doc/open-mergerequests.md
+
+# Temporary files and Windows metadata
+*.TMP
+*_Zone.Identifier
+*_Avecto.Zone.Identifier
+*_PG$Secure

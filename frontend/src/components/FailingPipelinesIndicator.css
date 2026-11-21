@@ -1,0 +1,149 @@
+/*FailingPipelinesIndicator.css*/
+
+.fp-indicator.fp--none {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--space-md);
+    height: 3rem;
+    border-radius: var(--card-radius);
+    background: var(--color-bg);
+    border: 1px solid #fff;
+    box-shadow: var(--card-shadow);
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: var(--font-small);
+    white-space: nowrap;
+}
+/* === CARD === */
+.fp-card {
+    background: var(--color-card);
+    border-radius: var(--card-radius);
+    padding: var(--space-md) var(--space-md);
+    padding-bottom: var(--space-md);
+    box-shadow: var(--card-shadow-1), var(--card-shadow-2);
+    width: clamp(20rem, 24vw, 32rem);
+    color: var(--color-text);
+    font-size: var(--font-base);
+    max-height: 32vh;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.fp-title {
+    font-size: var(--font-large);
+    font-weight: 600;
+    margin: 0 0 var(--space-sm);
+    flex-shrink: 0;
+}
+
+.fp-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    overflow-y: auto;
+    padding-right: 0.3rem;
+    height: calc(30vh - var(--space-md));
+}
+
+.fp-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* === Every item === */
+.fp-item {
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fp-item:last-child {
+    border-bottom: none;
+}
+
+/* === ROW 1: project + ID === */
+.fp-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fp-project {
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.fp-project:hover {
+    text-decoration: underline;
+}
+
+.fp-id {
+    color: var(--color-text);
+    font-size: var(--font-small);
+}
+
+/* === ROW 2: branch + status === */
+.fp-row-mid {
+    margin-top: var(--space-xxs);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fp-ref {
+    color: var(--color-subtle);
+    font-size: var(--font-small);
+}
+
+/* status-colors */
+.fp-status {
+    font-size: var(--font-small);
+    font-weight: 600;
+}
+
+.fp-failed {
+    color: #ff4d4d; /* red */
+}
+
+.fp-running {
+    color: #0089c4; /* blue */
+}
+
+.fp-pending {
+    color: #ffd100; /* yellow */
+}
+
+.fp-canceled {
+    color: #ffb366; /* grey */
+}
+
+/* === ROW 3: user + timestamp === */
+.fp-row-bottom {
+    margin-top: var(--space-xxs);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fp-user,
+.fp-time {
+    color: var(--color-subtle);
+    font-size: var(--font-small);
+}
+
+.fp-row-top,
+.fp-row-mid,
+.fp-row-bottom {
+    margin-top: 0.15rem;
+}
+
+.pipe__count {
+    color: var(--color-text);
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+    float: right;
+    font-weight: 600;
+    border: 1px solid var(--color-subtle);
+}

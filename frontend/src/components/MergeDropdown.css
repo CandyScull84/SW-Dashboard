@@ -1,0 +1,101 @@
+/*MergeDropDown.css*/
+
+/* === indicator when no merges exist === */
+.mr__indicator.mr--none {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 var(--space-md);
+    height: 3rem;
+    border-radius: var(--card-radius);
+    background: var(--color-bg);
+    border: 1px solid var(--color-subtle);
+    box-shadow: var(--card-shadow);
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: var(--font-small);
+    white-space: nowrap;
+}
+
+/* === Card for merges === */
+.merge__dropdown {
+    background: var(--color-card);
+    border-radius: var(--card-radius);
+    padding: var(--space-sm) var(--space-md) ;
+    box-shadow: var(--card-shadow-1), var(--card-shadow-2);
+    padding-bottom: var(--space-md);
+    width: clamp(20rem, 24vw, 32rem);
+    font-size: var(--font-small);
+    color: var(--color-text);
+
+    max-height: 32vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.merge__title {
+    margin: 0 0 var(--space-xs);
+    font-size: var(--font-large);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.merge__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 0.3rem;
+    height: calc(30vh - var(--space-md));
+}
+
+.merge__list::-webkit-scrollbar {
+    display: none;
+}
+
+.merge__row {
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.merge__row:last-child {
+    border-bottom: none;
+}
+
+.merge__link {
+    color: var(--color-text);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.merge__link:hover {
+    text-decoration: underline;
+}
+
+.merge__meta {
+    display: block;
+    color: var(--color-accent) ;
+    font-size: var(--font-small);
+}
+
+.merge__project {
+    display: block;
+    color: var(--color-subtle);
+    font-size: var(--font-small);
+    margin-top: 0.2rem;
+}
+
+.merge__count {
+    color: var(--color-text);
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-left: 8px;
+    font-weight: 600;
+    border: 1px solid var(--color-subtle);
+    float: right;
+}

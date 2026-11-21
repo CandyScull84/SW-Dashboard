@@ -1,0 +1,67 @@
+/*Header.css*/
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-bg);
+    box-shadow: var(--card-shadow);
+    height: var(--header-height);
+    padding: var(--space-sm) var(--space-lg);
+    z-index: 1000;
+}
+
+.app-header__logo {
+    width: var(--header-logo-width);
+    height: auto;
+    cursor: pointer;
+}
+
+
+.app-header__left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.app-header__right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.header__toggles {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.toggle__btn {
+    background: var(--color-card);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    padding: 0.2rem 0.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: var(--card-shadow-1);
+}
+.toggle__btn:hover {
+    background: var(--color-bg);
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: 1tr;
+    -webkit-font-smoothing: antialiased;
+}

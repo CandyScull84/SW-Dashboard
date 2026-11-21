@@ -1,0 +1,46 @@
+/*ProjectListCard.css*/
+
+.project__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+.project__list::-webkit-scrollbar {
+    display: none;
+}
+
+.project__row {
+    margin-bottom: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project__content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__name {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: var(--font-base);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project__name:hover {
+    text-decoration: underline;
+}
+
+.project__sub {
+    color: var(--color-accent);
+    font-size: var(--font-small);
+    margin-top: var(--space-xs);
+    word-break: break-word;
+}
+
+
